@@ -2,12 +2,12 @@
 
 import SwiftUI
 
-struct LabeledSection: View {
-    let title: String
-    let systemImage: String
-    let description: String
+public struct LabeledSection: View {
+    public let title: String
+    public let systemImage: String
+    public let description: String
     
-    var body: some View {
+    public var body: some View {
         HStack(spacing: 16) {
             Image(systemName: systemImage)
                 .resizable()

@@ -2,12 +2,12 @@
 
 import SwiftUI
 
-struct OnboardingScreen: View {
-    let image: Image
-    let appName: String
-    let sections: [LabeledSection]
+public struct OnboardingScreen: View {
+    public let image: Image
+    public let appName: String
+    public let sections: [LabeledSection]
     
-    var body: some View {
+    public var body: some View {
         VStack {
             image
                 .resizable()

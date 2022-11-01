@@ -2,14 +2,14 @@
 
 import SwiftUI
 
-struct HoverHighlightedButton<Label: View>: View {
-    var highlightColor: Color = .accentColor
-    let action: () -> Void
-    let label: () -> Label
+public struct HoverHighlightedButton<Label: View>: View {
+    public var highlightColor: Color = .accentColor
+    public let action: () -> Void
+    public let label: () -> Label
     
     @State private var isHovered: Bool = false
     
-    var body: some View {
+    public var body: some View {
         Button {
             action()
         } label: {
