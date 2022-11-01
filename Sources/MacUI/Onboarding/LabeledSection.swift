@@ -7,6 +7,12 @@ public struct LabeledSection: View {
     public let systemImage: String
     public let description: String
     
+    public init(title: String, systemImage: String, description: String) {
+        self.title = title
+        self.systemImage = systemImage
+        self.description = description
+    }
+    
     public var body: some View {
         HStack(spacing: 16) {
             Image(systemName: systemImage)

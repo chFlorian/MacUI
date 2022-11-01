@@ -7,6 +7,12 @@ public struct OnboardingScreen: View {
     public let appName: String
     public let sections: [LabeledSection]
     
+    public init(image: Image, appName: String, sections: [LabeledSection]) {
+        self.image = image
+        self.appName = appName
+        self.sections = sections
+    }
+    
     public var body: some View {
         VStack {
             image

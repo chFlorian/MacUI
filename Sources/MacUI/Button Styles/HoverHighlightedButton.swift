@@ -9,6 +9,12 @@ public struct HoverHighlightedButton<Label: View>: View {
     
     @State private var isHovered: Bool = false
     
+    public init(highlightColor: Color, action: @escaping () -> Void, label: @escaping () -> Label) {
+        self.highlightColor = highlightColor
+        self.action = action
+        self.label = label
+    }
+    
     public var body: some View {
         Button {
             action()
